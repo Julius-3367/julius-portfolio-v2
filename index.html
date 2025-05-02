@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julius K. Korir | Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Julius K. Korir, a passionate Software Engineer building smart, reliable solutions.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-sm py-4">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center">
+        <a href="#home" class="text-xl font-bold text-teal-600 hover:text-teal-500 transition-colors">
+          Julius K. Korir
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-600 hover:text-teal-600 transition-colors">Home</a>
+          <a href="#about" class="text-gray-600 hover:text-teal-600 transition-colors">About</a>
+          <a href="#projects" class="text-gray-600 hover:text-teal-600 transition-colors">Projects</a>
+          <a href="#skills" class="text-gray-600 hover:text-teal-600 transition-colors">Skills</a>
+          <a href="#contact" class="text-gray-600 hover:text-teal-600 transition-colors">Contact</a>
+        </div>
+
+        <!-- Mobile Navigation Toggle -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-teal-600 hover:text-teal-500 focus:outline-none">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="md:hidden mt-4 pb-4 hidden">
+        <div class="flex flex-col space-y-4">
+          <a href="#home" class="text-gray-600 hover:text-teal-600 transition-colors">Home</a>
+          <a href="#about" class="text-gray-600 hover:text-teal-600 transition-colors">About</a>
+          <a href="#projects" class="text-gray-600 hover:text-teal-600 transition-colors">Projects</a>
+          <a href="#skills" class="text-gray-600 hover:text-teal-600 transition-colors">Skills</a>
+          <a href="#contact" class="text-gray-600 hover:text-teal-600 transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col md:flex-row items-center justify-between bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
+            Hi, I'm 
+            <span class="text-teal-600 relative">
+              Julius
+              <span class="absolute bottom-2 left-0 w-full h-3 bg-teal-100 -z-10"></span>
+            </span>
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+            A passionate Software Engineer building smart, reliable solutions.
+          </p>
+          <a href="https://docs.google.com/document/d/1r7v4eQJ88deG3PMdIHJ4MI3XFFkxcLu27nwLSJk_tb4/edit?usp=sharing" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="inline-flex items-center justify-center px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white rounded-md transition-colors">
+            <i data-feather="download" class="h-4 w-4 mr-2"></i>
+            Download Resume
+          </a>
+        </div>
+        <div class="md:w-2/5">
+          <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
+            <div class="absolute inset-0 rounded-full bg-teal-100 transform -rotate-6"></div>
+            <div class="absolute inset-0 rounded-full overflow-hidden">
+              <img src="https://i.postimg.cc/G37cD2QB/68.jpg" alt="Julius K. Korir" class="object-cover w-full h-full">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-teal-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+        <span class="relative inline-block">
+          About Me
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-teal-600"></span>
+        </span>
+      </h2>
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-sm border-l-4 border-teal-600">
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          I'm Julius K. Korir, a dedicated Software Engineer with a background in procurement and logistics
+          management. I graduated from the ALX Africa Software Engineering Program in August 2024. I'm passionate
+          about solving real-world problems with efficient and scalable code.
+        </p>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          I enjoy building web applications using tools and technologies like Python, Flask, MySQL, JavaScript, HTML,
+          CSS, and version control with Git/GitHub. I also explore AI tools to enhance productivity and creativity.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          I'm always eager to learn, collaborate, and contribute to meaningful tech projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+        <span class="relative inline-block">
+          Projects
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-teal-500"></span>
+        </span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+        <!-- Projects will be loaded dynamically via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-teal-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+        <span class="relative inline-block">
+          Skills
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-teal-700"></span>
+        </span>
+      </h2>
+      <div class="max-w-3xl mx-auto">
+        <div class="flex flex-wrap justify-center gap-4" id="skills-container">
+          <!-- Skills will be loaded dynamically via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+        <span class="relative inline-block">
+          Contact Me
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-teal-600"></span>
+        </span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-teal-600">
+          <h3 class="text-xl font-semibold mb-6 text-teal-600">Get In Touch</h3>
+          <form id="contact-form" class="space-y-4">
+            <div>
+              <input type="text" name="name" placeholder="Your Name" required
+                class="w-full px-3 py-2 border border-teal-200 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600">
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Your Email" required
+                class="w-full px-3 py-2 border border-teal-200 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600">
+            </div>
+            <div>
+              <textarea name="message" placeholder="Your Message" required
+                class="w-full min-h-[150px] px-3 py-2 border border-teal-200 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"></textarea>
+            </div>
+            <button type="submit" 
+              class="inline-flex items-center justify-center px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white rounded-md transition-colors">
+              Send Message
+            </button>
+          </form>
+          <div id="form-success" class="mt-4 p-4 bg-green-100 text-green-700 rounded-md hidden">
+            Thank you for your message. I'll get back to you soon.
+          </div>
+          <div id="form-error" class="mt-4 p-4 bg-red-100 text-red-700 rounded-md hidden">
+            There was an error sending your message. Please try again.
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-teal-500">
+          <h3 class="text-xl font-semibold mb-6 text-teal-500">Contact Information</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <i data-feather="mail" class="h-5 w-5 text-teal-500 mt-1 mr-3"></i>
+              <div>
+                <p class="font-medium text-gray-700">Email</p>
+                <a href="mailto:korirjulius001@gmail.com" class="text-teal-500 hover:text-teal-400 transition-colors">
+                  korirjulius001@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-feather="phone" class="h-5 w-5 text-teal-500 mt-1 mr-3"></i>
+              <div>
+                <p class="font-medium text-gray-700">Phone</p>
+                <a href="tel:+254707670780" class="text-teal-500 hover:text-teal-400 transition-colors">
+                  +254 707 670 780
+                </a>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-feather="github" class="h-5 w-5 text-teal-500 mt-1 mr-3"></i>
+              <div>
+                <p class="font-medium text-gray-700">GitHub</p>
+                <a href="https://github.com/Julius-3367" target="_blank" rel="noopener noreferrer"
+                  class="text-teal-500 hover:text-teal-400 transition-colors">
+                  github.com/Julius-3367
+                </a>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-feather="linkedin" class="h-5 w-5 text-teal-500 mt-1 mr-3"></i>
+              <div>
+                <p class="font-medium text-gray-700">LinkedIn</p>
+                <a href="https://linkedin.com/in/korir-julius-499b01215" target="_blank" rel="noopener noreferrer"
+                  class="text-teal-500 hover:text-teal-400 transition-colors">
+                  linkedin.com/in/korir-julius-499b01215
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-teal-600 text-white py-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p class="mb-2">© <span id="current-year"></span> Julius K. Korir. All rights reserved.</p>
+        <p class="text-white/80 text-sm">Software Engineer | Problem Solver | Continuous Learner</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>
+
